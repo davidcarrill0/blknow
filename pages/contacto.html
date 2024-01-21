@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>CONTACTO</title>
+
+    <!--Fuente importada de web-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="background-color-black">
+    <header id="top">
+        <nav>
+            <!--logo linkeado al home-->
+            <a href="../index.html">
+                <img src="../assets/img/logos-iconos/logo-blknow-white.svg" alt="Logo BLKNOW">
+            </a>
+            <!--enlaces del nav-->
+            <ul>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./autor.html">Autor</a>
+                </li>
+                <li>
+                    <a href="./galeria.html">Galería</a>
+                </li>
+                <li>
+                    <a href="./contacto.html">Contactos</a>
+                </li>
+                <li>
+                    <a href="./nft.html"> <!--enlaces del botón en nav-->
+                        <button class="button button-nav">NFT</button> <!--clase2 para variar propiedad de la clase 1-->
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div>
+                <p class="tittle-big">CONTACTO</p>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <h4>ENVÍANOS UN MENSAJE</h4>
+                    </div>
+                    <div class="background-color-white">
+                        <form action="form.php" method="post">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" name="Nombre" id="nombre" placeholder="Jhon">
+                            <label for="apellido">Apellido:</label>
+                            <input type="text" name="Apellido" id="apellido" placeholder="Doe">
+                            <label for="email">Email:</label>
+                            <input type="email" name="Email" id="email" placeholder="nombre@ejemplo.com">
+                            <label for="obra">Obra:</label>
+                            <select name="Obra" id="obra">
+                                <option value="fotos">Fotos</option>
+                                <option value="fotos">NFT</option>
+                            </select>
+                            <label for="Comentario">Comentario:</label>
+                            <textarea name="Comentario" id="comentario" cols="30" rows="10">Escribe aquí tu comentario...</textarea>
+                            <input class="button button-secondary" type="submit" value="ENVIAR">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.5544482252894!2d-73.99597355!3d40.7058094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a2343ce7b2b%3A0x2526ddba7abd465c!2sBrooklyn%20Bridge!5e0!3m2!1sen!2sus!4v1702269921615!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer class="background-color-grey">
+        <!--logo linkeado a la parte superir de la página-->
+        <a href="#top">
+            <img class="logo-footer" src="../assets/img/logos-iconos/logo-blknow-black.svg" alt="Logo BLKNOW">
+        </a>
+        <div class="copyright">
+            Copyright © BLKNOW - All Rights Reserved Powered by David Carrillo
+        </div>
+        <div>
+            <!--enlaces del footer-->
+            <ul>
+                <li>
+                    <a href="./nft.html">NFT</a>
+                </li>
+                <li>
+                    <a href="./contacto.html">Contactos</a>
+                </li>
+                <!--link exterior a instagram del artista-->
+                <a href="https://www.instagram.com/blknow/" target="_blank">
+                    <img class="logo-insta-footer" src="../assets/img/logos-iconos/logo-insta-black.svg" alt="Logo Instagram">
+                </a>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
