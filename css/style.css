@@ -367,8 +367,19 @@ header a img {
 /*  */
 /*  */
 /* AUTOR-main */
+
+.autor-bio-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.autor-bio-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .autor-photo {
-    height: 600px;
+    width: 600px;
 }
 
 .autor-instagram {
@@ -386,12 +397,36 @@ header a img {
 /*  */
 /*  */
 /* GALERÍA-main */
+
+.galeria-header-title {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
 .galeria-header-background {
     background-image: url("../assets/img/galeria/galery-header.jpg");
     background-size: cover;
     background-position-y: top;
     background-repeat: no-repeat;
     height: 800px;
+}
+
+.galeria-images-content {
+    position: relative;
+    top: -10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.galeria-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
 }
 
 .galery-image-left {
@@ -421,7 +456,16 @@ header a img {
     width: 300px;
 }
 
+.galeria-info-content {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
 
+.galeria-video-content {
+    display: flex;
+    justify-content: center;
+}
 
 
 /*  */
