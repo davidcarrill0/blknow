@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head class="container-large">
     <meta charset="UTF-8">
+    <!-- Responsive meta • width=device-with • evita distorciones sin importar pixels -->
+    <!-- Responsive meta • initial-scale=1.0 • escala 1:1  -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link de bootstrap CDN - siempre arriba -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- link a CSS -->
     <link rel="stylesheet" href="../css/style.css">
-    <title>AUTOR</title>
+    <title>BLKNOW</title>
 
     <!--Fuente importada de web-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,35 +21,45 @@
 </head>
 
 <body class="background-color-black">
-    <header id="top">
-        <nav>
-            <!--logo linkeado al home-->
-            <a href="../index.html">
-                <img src="../assets/img/logos-iconos/logo-blknow-white.svg" alt="Logo BLKNOW">
-            </a>
-            <!--enlaces del nav-->
-            <ul>
-                <li>
-                    <a href="../index.html">Home</a>
-                </li>
-                <li>
-                    <a href="./autor.html">Autor</a>
-                </li>
-                <li>
-                    <a href="./galeria.html">Galería</a>
-                </li>
-                <li>
-                    <a href="./contacto.html">Contactos</a>
-                </li>
-                <li>
-                    <a href="./nft.html"> <!--enlaces del botón en nav-->
-                        <button class="button button-nav">NFT</button> <!--clase2 para variar propiedad de la clase 1-->
-                    </a>
-                </li>
-            </ul>
+    <header id="top" class="container-large">
+        <nav class="navbar navbar-expand-lg navbar-dark pt-4 nav-pt-mobile">
+            <div class="container-fluid px-0"> <!-- para usar 100% -->
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../assets/img/logos-iconos/logo-blknow-white.svg" alt="Logo BLKNOW">
+                </a>
+                <button class="navbar-toggler mobile-menu-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon mobile-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse header-mobile-tablet" id="navbarNav"> <!-- @media tablet -->
+                    <ul class="navbar-nav ms-auto align-items-center gap-5 "> <!-- ms = margin left -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/autor.html">Autor</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/galeria.html">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contacto.html">Contactos</a>
+                        </li>
+                        <li>
+                            <a class="nav-link px-0 active" aria-current="page" href="../pages/nft.html">
+                                <!--enlaces del botón en nav-->
+                                <button class="button button-teal">NFT</button>
+                                <!--clase2 para variar propiedad de la clase 1-->
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
         </nav>
     </header>
-
     <main>
         <section>
             <div>
@@ -84,30 +100,40 @@
         </section>
     </main>
 
-    <footer class="background-color-grey">
-        <!--logo linkeado a la parte superir de la página-->
-        <a href="#top">
-            <img class="logo-footer" src="../assets/img/logos-iconos/logo-blknow-black.svg" alt="Logo BLKNOW">
-        </a>
-        <div class="copyright">
-            Copyright © BLKNOW - All Rights Reserved Powered by David Carrillo
-        </div>
-        <div>
-            <!--enlaces del footer-->
-            <ul>
-                <li>
-                    <a href="./nft.html">NFT</a>
-                </li>
-                <li>
-                    <a href="./contacto.html">Contactos</a>
-                </li>
-                <!--link exterior a instagram del artista-->
-                <a href="https://www.instagram.com/blknow/" target="_blank">
-                    <img class="logo-insta-footer" src="../assets/img/logos-iconos/logo-insta-black.svg" alt="Logo Instagram">
-                </a>
-            </ul>
+    <footer class="background-color-grey conta">
+        <div class="container-large">
+            <!--logo linkeado a la parte superir de la página-->
+            <a href="#top">
+                <img class="logo-footer" src="../assets/img/logos-iconos/logo-blknow-black.svg" alt="Logo BLKNOW">
+            </a>
+            <div class="copyright">
+                <p class="max-width-tiny">
+                    Copyright © BLKNOW - All Rights Reserved Powered by David Carrillo
+                </p>
+            </div>
+            <div class="footer-links">
+                <!--enlaces del footer-->
+                <ul>
+                    <li>
+                        <a href="../pages/nft.html">NFT</a>
+                    </li>
+                    <li>
+                        <a href="../pages/contacto.html">Contactos</a>
+                    </li>
+                    <!--link exterior a instagram del artista-->
+                    <a href="https://www.instagram.com/blknow/" target="_blank">
+                        <img class="logo-insta-footer" src="../assets/img/logos-iconos/logo-insta-black.svg"
+                            alt="Logo Instagram">
+                    </a>
+                </ul>
+            </div>
         </div>
     </footer>
+
+    <!-- Link de JS - algunos elementos de bootstrap tienen JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
