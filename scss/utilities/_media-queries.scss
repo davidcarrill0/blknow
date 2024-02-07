@@ -1,0 +1,472 @@
+/* ------ */
+/* ------ */
+/* TABLET - 991px y 768px */
+@media screen and (max-width: 991px) {
+
+    /* ESTILOS-global-tablet */
+    .container-large {
+        padding: 0rem 2rem;
+    }
+
+    .max-width-small {
+        max-width: 40vw;
+    }
+
+    .max-width-medium {
+        max-width: 60vw;
+    }
+
+    .padding-section {
+        /* padding general para secciones */
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+
+    /* FONTS-estilos-tablet*/
+    h1 {
+        font-size: 9vw;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    .tittle-big {
+        /*títulos principales*/
+        font-size: 18vw;
+    }
+
+
+    /* HEADER-estilos-general-tablet*/
+    #top {
+        nav {
+            div {
+                .navbar-brand {
+                    img {
+                        height: 55px;
+                    }
+                }
+
+                .mobile-menu-button {
+                    padding: 0;
+                    /*pisar padding BS*/
+                    border: 0;
+
+                    /*pisar borde BS*/
+                    &:focus {
+                        box-shadow: none;
+                        /*pisar shador BS*/
+                    }
+
+                    .mobile-icon {
+                        background-image: url(../assets/img/logos-iconos/mobile-icon.svg);
+                        height: 40px;
+                        width: 40px;
+                    }
+                }
+
+                .header-mobile-tablet {
+                    position: absolute;
+                    top: 90px;
+                    background-color: #111111e5;
+                    backdrop-filter: blur(20px);
+                    width: 100%;
+                    padding: 1rem 0rem 4rem 0rem;
+                    border-bottom-left-radius: 2rem;
+                    border-bottom-right-radius: 2rem;
+                    z-index: 10;
+                }
+            }
+        }
+    }
+
+    /* ------ */
+    /* main-INDEX-tablet*/
+    .main-index {
+
+        /* hero-section */
+        .home-padding-hero {
+            padding-top: 1rem;
+            padding-bottom: 7rem;
+
+            .home-hero {
+                .home-hero-image {
+                    min-width: 30rem;
+                    max-height: 35rem;
+                    min-height: 30rem;
+                    border-radius: 1rem;
+                }
+
+                .home-thumbnail-content {
+                    /* hero-contenedor de thumbnails */
+                    right: -1rem;
+                    bottom: -3rem;
+                    flex-direction: row;
+
+                    .home-thumbnail1 {
+                        height: 7rem;
+                        width: 7rem;
+                    }
+
+                    .home-thumbnail2 {
+                        height: 7rem;
+                        width: 7rem;
+                    }
+
+                    .home-background-price {
+                        align-self: stretch;
+                    }
+                }
+            }
+        }
+
+        /* banner-section */
+        .home-banner-content {
+            height: auto;
+
+            .home-banner-text {
+                font-size: 9vw;
+                padding-top: 6%;
+                padding-bottom: 4%;
+            }
+        }
+
+        /* info-section */
+        .home-info-content {
+            gap: 5rem;
+
+            .home-photo-content {
+                .home-photo-image {
+                    min-width: 30rem;
+                    min-height: 30rem;
+                    max-height: 35rem;
+                }
+            }
+
+            /* nft-section */
+            .home-nft-content {
+                .home-nft-wrapper {
+                    .home-nft-image {
+                        min-width: 30rem;
+                        min-height: 30rem;
+                        max-height: 35rem;
+                    }
+
+                    .home-nft-button {
+                        height: 8rem;
+                    }
+                }
+
+                .home-nft-info {
+                    left: 4rem;
+                }
+            }
+        }
+    }
+
+    /* ------ */
+    /* main-NFT-tablet*/
+    .main-nft {
+        .nft-padding-hero {
+            /*padding custom nft*/
+            padding-top: 4rem;
+            padding-bottom: 0rem;
+
+            .nft-title-header {
+                h1 {
+                    .nft-title-image-01 {
+                        top: -0.4rem;
+                        height: 15%;
+                        width: 18%;
+                    }
+
+                    .nft-title-image-02 {
+                        top: -0.3rem;
+                        height: 15%;
+                        width: 25%;
+                        border-radius: 0.5rem;
+                    }
+
+                }
+            }
+        }
+
+    }
+
+
+    /* ------ */
+    /* FOOTER-estilos-general-tablet */
+    footer {
+        padding: 1rem 0rem;
+
+        div {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 70px auto;
+            padding: 0rem 0rem;
+
+            a {
+                .logo-footer {
+                    height: 45px;
+                }
+            }
+
+            .copyright {
+                display: flex;
+                padding: 0.5rem 0rem;
+                color: #9f9f9f;
+                font-size: 0.7rem;
+                order: 2;
+                grid-column: 1 / 3;
+                justify-content: center;
+                text-align: center;
+            }
+
+            .footer-links {
+                ul {
+                    column-gap: 1rem;
+                }
+            }
+        }
+    }
+}
+
+
+/* ------ */
+/* ------ */
+/* MOBILE - 767px y 576 */
+@media screen and (max-width: 767px) {
+
+    /* ESTILOS-global-mobil */
+    .container-large {
+        padding: 0rem 1.5rem;
+    }
+
+    .max-width-tiny {
+        max-width: 15rem;
+    }
+
+    .max-width-small {
+        max-width: 100%;
+    }
+
+    .max-width-medium {
+        max-width: 100%;
+    }
+
+    .padding-section {
+        /* padding general para secciones */
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+
+    /* FONTS-estilos-tablet*/
+    h1 {
+        font-size: 12vw;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    h5 {
+        font-size: 1.25rem;
+    }
+
+    .tittle-big {
+        /*títulos principales*/
+        font-size: 18vw;
+    }
+
+
+    /* HEADER-estilos-general-mobile*/
+    #top {
+        .nav-pt-mobile {
+            /* pisar padding BS */
+            padding-top: 1rem !important;
+        }
+
+        nav {
+            div {
+                .navbar-brand {
+                    img {
+                        height: 50px;
+                    }
+                }
+            }
+        }
+    }
+
+    /* ------ */
+    /* main-INDEX-mobile*/
+    .main-index {
+        .home-padding-hero {
+            padding-top: 1rem;
+            padding-bottom: 4rem;
+
+            .home-hero {
+                position: relative;
+                display: grid;
+                gap: 1.5rem;
+
+                .home-hero-info {
+                    position: relative;
+                    order: 2;
+                }
+
+                .home-hero-image {
+                    background-position: bottom;
+                    width: 100%;
+                    min-width: auto;
+                    max-height: 40rem;
+                    min-height: 30rem;
+                    border-radius: 0.75rem;
+                }
+
+                .home-thumbnail-content {
+                    /* hero-contenedor de thumbnails */
+                    position: absolute;
+                    right: 0rem;
+                    bottom: auto;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: end;
+                    gap: 0rem;
+
+                    .home-thumbnail1 {
+                        display: none;
+                    }
+
+                    .home-thumbnail2 {
+                        display: none;
+                    }
+
+                    .home-background-price {
+                        padding: 1rem 1rem 1rem 0.75rem;
+                    }
+                }
+            }
+        }
+
+        /* banner-section */
+        .home-banner-content {
+            .home-banner-text {
+                font-size: 12vw;
+            }
+        }
+
+        /* info-section */
+        .home-info-content {
+            gap: 4rem;
+
+            .home-photo-content {
+                display: grid;
+
+                .home-photo-image {
+                    width: 100%;
+                    min-width: auto;
+                    min-height: 15rem;
+                    max-height: 20rem;
+                    border-radius: 0.75rem;
+                }
+
+                .home-photo-info {
+                    position: relative;
+                    top: -1rem;
+                    align-items: start;
+                    text-align: left;
+                    .align-right {
+                        left: -0.5rem;
+                    }
+                }
+            }
+
+            /* nft-section */
+            .home-nft-content {
+                display: grid;
+
+                .home-nft-wrapper {
+                    .home-nft-image {
+                        width: 100%;
+                        min-width: auto;
+                        min-height: 15rem;
+                        max-height: 20rem;
+                    }
+
+                    .home-nft-button {
+                        height: 5rem;
+
+                        .nft-arrow-image {
+                            /*estilos para flechas*/
+                            height: 100%;
+                            padding: 1rem;
+                        }
+                    }
+                }
+
+                .home-nft-info {
+                    position: relative;
+                    top: -1rem;
+                    left: 0rem;
+                    .align-left {
+                        left: -0.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    /* ------ */
+    /* main-NFT-monile*/
+    .main-nft {
+        .nft-padding-hero {
+            .nft-title-header {
+                h1 {
+                    .nft-title-image-01 {
+                        top: -0.3rem;
+                        height: 13%;
+                        width: 25%;
+                    }
+
+                    .nft-title-image-02 {
+                        top: -0.3rem;
+                        height: 13%;
+                        width: 25%;
+                        border-radius: 0.5rem;
+                    }
+                }
+            }
+        }
+
+        .nft-images-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            column-gap: 0rem;
+
+            .nft-button-content {
+                grid-column: auto;
+            }
+        }
+    }
+
+    footer {
+        div {
+            display: flex;
+            flex-direction: column;
+            padding: 0rem 0rem;
+            gap: 1rem;
+
+            .copyright {
+                padding: 0rem 0rem;
+            }
+
+            .footer-links {
+                justify-content: center;
+            }
+        }
+    }
+
+
+}

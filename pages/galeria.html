@@ -11,6 +11,8 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- link a CSS -->
     <link rel="stylesheet" href="../css/style.css">
+    <!-- Link a scss-->
+    <link rel="stylesheet" href="../css/main.css">
     <title>BLKNOW</title>
 
     <!--Fuente importada de web-->
@@ -21,8 +23,7 @@
 </head>
 
 <body class="background-color-black">
-
-    <header id="top" class="container-large galeria-header-background">
+    <header id="top" class="container-large">
         <nav class="navbar navbar-expand-lg navbar-dark pt-4 nav-pt-mobile">
             <div class="container-fluid px-0"> <!-- para usar 100% -->
                 <a class="navbar-brand" href="../index.html">
@@ -40,16 +41,16 @@
                             <a class="nav-link" href="../index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../pages/autor.html">Autor</a>
+                            <a class="nav-link" href="./autor.html">Autor</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../pages/galeria.html">Galería</a>
+                            <a class="nav-link" href="./galeria.html">Galería</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../pages/contacto.html">Contactos</a>
+                            <a class="nav-link" href="./contacto.html">Contactos</a>
                         </li>
                         <li>
-                            <a class="nav-link px-0 active" aria-current="page" href="../pages/nft.html">
+                            <a class="nav-link px-0 active" aria-current="page" href="./nft.html">
                                 <!--enlaces del botón en nav-->
                                 <button class="button button-teal">NFT</button>
                                 <!--clase2 para variar propiedad de la clase 1-->
@@ -60,44 +61,40 @@
 
             </div>
         </nav>
-        <div class="galeria-header-title">
-            <h1 class="tittle-big">GALERÍA</h1>
-            <h2>FOTO & VIDEO</h2>
-        </div>
     </header>
 
-    <main>
-        <Section class="galeria-images-content">
+    <main class="main-galeria">
+        <section class="container-large">
+            <div class="galeria-header-title">
+                <h1 class="tittle-big">GALERÍA</h1>
+                <h2>FOTO & VIDEO</h2>
+            </div>
+            <div>
+                <img class="galeria-header-background" src="../assets/img/galeria/galery-header.jpg" alt="">
+            </div>
+        </section>
+        <Section class="container-large galeria-content">
             <div class="galeria-images">
-                <div class="galery-image-left"></div>
-                <div class="galery-image-mid"></div>
-                <div class="galery-image-right"></div>
+                <div class="galery-image-01"></div>
+                <div class="galery-image-02"></div>
+                <div class="galery-image-03"></div>
             </div>
             <div class="galeria-info-content">
                 <div>
                     <h3>150+</h3>
                     <h6>FOTOS</h6>
                 </div>
-                <div>
-                    <!--Divisor-->
-                </div>
+                <div class="galeria-divisor-info background-color-teal"></div> <!--Divisor-->
                 <div>
                     <h3>5+</h3>
                     <h6>AÑOS</h6>
                 </div>
-                <div>
-                    <!--Divisor-->
-                </div>
+                <div class="galeria-divisor-info background-color-teal"></div> <!--Divisor-->
                 <div>
                     <h3>3K+</h3>
                     <h6>DESCARGAS</h6>
                 </div>
             </div>
-        </Section>
-        <section class="container-large">
-
-        </section>
-        <section class="container-large">
             <div class="galeria-video-content">
                 <!--Video-->
                 <iframe width="768" height="480" src="https://www.youtube.com/embed/jS6VHNZDI9s?si=4S-WFFNUbwgwOggW"
@@ -105,7 +102,7 @@
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
             </div>
-        </section>
+        </Section>
     </main>
 
     <footer class="background-color-grey conta">

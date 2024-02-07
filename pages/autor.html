@@ -11,6 +11,8 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- link a CSS -->
     <link rel="stylesheet" href="../css/style.css">
+    <!-- Link a scss-->
+    <link rel="stylesheet" href="../css/main.css">
     <title>BLKNOW</title>
 
     <!--Fuente importada de web-->
@@ -39,16 +41,16 @@
                             <a class="nav-link" href="../index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../pages/autor.html">Autor</a>
+                            <a class="nav-link" href="./autor.html">Autor</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../pages/galeria.html">Galería</a>
+                            <a class="nav-link" href="./galeria.html">Galería</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../pages/contacto.html">Contactos</a>
+                            <a class="nav-link" href="./contacto.html">Contactos</a>
                         </li>
                         <li>
-                            <a class="nav-link px-0 active" aria-current="page" href="../pages/nft.html">
+                            <a class="nav-link px-0 active" aria-current="page" href="./nft.html">
                                 <!--enlaces del botón en nav-->
                                 <button class="button button-teal">NFT</button>
                                 <!--clase2 para variar propiedad de la clase 1-->
@@ -60,13 +62,14 @@
             </div>
         </nav>
     </header>
-    <main>
+
+    <main class="main-autor">
         <section class="container-large padding-section">
             <div class="autor-bio-content">
                 <div class="background-color-teal teal-box-decor"></div>
                 <div class="autor-bio-info">
                     <p class="tittle-big">DAVID</p>
-                    <p>
+                    <p class="max-width-small">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra
                         nec, mattis ac neque. Duis Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam
                         velit, vulputate eu pharetra nec, mattis ac neque. <br>Duis Lorem ipsum dolor sit amet,
@@ -77,14 +80,12 @@
                     <img class="autor-photo" src="../assets/img/autor/autor-photo.jpg" alt="Foto de Autor">
                 </div>
             </div>
-        </section>
 
-        <section class="container-large padding-section">
-            <div class="background-color-darkgrey">
+            <div class="autor-insta-content">
                 <div>
                     <img class="autor-instagram" src="../assets/img/autor/autor-instagram.jpg" alt="Foto de ciudad">
                 </div>
-                <div>
+                <div class="autor-insta-info background-color-darkgrey">
                     <h2>INSTAGRAM</h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra
@@ -92,12 +93,12 @@
                         velit, vulputate eu pharetra nec, mattis ac neque. Duis
                     </p>
                 </div>
+                <a class="autor-nft-button" href="./pages/nft.html"> <!--enlaces de flecha-->
+                    <img class="autor-arrow-image" src="../assets/img/logos-iconos/arrow-black.svg" alt="">
+                </a>
             </div>
-            <a href="./pages/nft.html"> <!--enlaces de flecha-->
-                <img class="nft-arrow-black background-color-grey" src="../img/logos-iconos/arrow-black.svg"
-                    alt="">
-            </a>
         </section>
+
     </main>
 
     <footer class="background-color-grey conta">

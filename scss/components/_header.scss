@@ -1,0 +1,28 @@
+/* header-estilos-general*/
+#top {
+    position: relative;
+    z-index: 10;
+    }
+    nav {
+        div {
+            a {
+                img {
+                    height: 60px;
+                }
+            }
+            div {
+                ul {
+                    li {
+                        .nav-link:hover {
+                            color: #5ee4fd;
+                        }
+                        a{
+                            .button-teal {
+                                border: 2px solid #5ee4fd;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }

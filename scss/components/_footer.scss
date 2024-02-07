@@ -1,0 +1,52 @@
+/* FOOTER-estilos*/
+footer {
+    div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 0rem;
+
+        a {
+            .logo-footer {
+                height: 50px;
+            }
+        }
+
+        .copyright {
+            color: #9f9f9f;
+            font-size: 0.7rem;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: end;
+
+            ul {
+                display: flex;
+                /* flex para links */
+                align-items: center;
+                column-gap: 2rem;
+                list-style: none;
+                margin-bottom: 0;
+                /*pisar margin BS*/
+                padding-left: 0;
+
+                /*pisar padding BS*/
+                /*quitar bullet*/
+                li {
+                    a {
+                        text-decoration: none;
+                        /*quitar subrayado a links*/
+                        color: #111111;
+                    }
+                }
+
+                a {
+                    .logo-insta-footer {
+                        height: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

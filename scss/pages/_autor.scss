@@ -1,0 +1,63 @@
+/* AUTOR-main */
+.main-autor {
+    .autor-bio-content {
+        display: grid;
+        grid-template-columns: auto 1fr 1fr;
+
+        .teal-box-decor {
+            height: 50px;
+            width: 50px;
+        }
+
+        .autor-bio-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1rem;
+            padding: 0rem 4rem 0rem 0rem;
+        }
+
+        .autor-photo {
+            min-height: 450px;
+            width: 100%;
+            min-width: 300px;
+            object-fit: cover;
+        }
+    }
+
+
+    .autor-insta-content {
+        display: grid;
+        grid-template-columns: 1fr 2fr auto;
+
+        div {
+            .autor-instagram {
+                min-height: 450px;
+                width: 100%;
+                min-width: 300px;
+                object-fit: cover;
+            }
+
+        }
+
+        .autor-insta-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1rem;
+            padding: 0rem 4rem;
+        }
+
+        .autor-nft-button {
+            background-color: #696969;
+            height: 12rem;
+            align-self: flex-end;
+
+            .autor-arrow-image {
+                /*estilos para flechas*/
+                height: 100%;
+                padding: 2rem;
+            }
+        }
+    }
+}

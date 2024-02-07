@@ -1,0 +1,902 @@
+@charset "UTF-8";
+/* estilos reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* estilos globales */
+/* para ver cajas temporal */
+/* * {
+    border: 1px solid rgb(0, 255, 81);
+} */
+html {
+  background-color: rgb(136, 136, 136);
+}
+
+body {
+  font-family: "avant", sans-serif;
+  /*pisar font BS*/
+  color: white;
+  /*pisar color BS*/
+}
+
+.background-color-black {
+  background-color: #111111;
+}
+
+.background-color-white {
+  background-color: white;
+}
+
+.background-color-grey {
+  background-color: #d6d6d6;
+}
+
+.background-color-darkgrey {
+  background-color: #9f9f9f;
+}
+
+.background-color-teal {
+  background-color: #5ee4fd;
+}
+
+.container-large {
+  margin: auto;
+  max-width: 120rem;
+  padding: 0rem 3rem;
+}
+
+.max-width-small {
+  max-width: 30rem;
+}
+
+.max-width-medium {
+  max-width: 50rem;
+}
+
+.padding-section {
+  /*padding global para secciones*/
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+/* fonts-estilos-globales*/
+@font-face {
+  /*fonts import*/
+  font-family: avant;
+  src: url(../assets/ITC-Avant/ITCAvantGardeStd-Bk.otf);
+}
+h1 {
+  font-family: "Aldrich", sans-serif;
+  font-size: 7rem;
+  font-weight: 900;
+  /*pisar weith:500 BS*/
+  line-height: 1;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-family: "Aldrich", sans-serif;
+  font-size: 3.5rem;
+  line-height: 1;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-family: "Aldrich", sans-serif;
+  font-size: 3rem;
+  line-height: 0.8;
+  margin-bottom: 0;
+}
+
+h4 {
+  font-family: "Aldrich", sans-serif;
+  font-size: 2.5rem;
+  line-height: 1;
+  margin-bottom: 0;
+}
+
+h5 {
+  font-family: "Aldrich", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1;
+  margin-bottom: 0;
+}
+
+h6 {
+  font-family: "Aldrich", sans-serif;
+  font-size: 1rem;
+  line-height: 1;
+  margin-bottom: 0;
+}
+
+p {
+  line-height: 1.3;
+  /*pisar line-height BS*/
+  margin-bottom: 0;
+  /*pisar margin BS*/
+}
+
+.tittle-big {
+  /*títulos principales*/
+  font-family: "Aldrich", sans-serif;
+  font-size: 13rem;
+  line-height: 0.5;
+  position: relative;
+  left: -1rem;
+}
+
+.text-color-black {
+  color: black;
+  /*pisar color BS*/
+}
+
+.text-color-gray {
+  color: #9f9f9f;
+}
+
+/* botones-estilos-global */
+.button {
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 100px;
+  color: white;
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+.button-secondary {
+  background-color: #111111;
+  border: 0px;
+}
+
+/* header-estilos-general*/
+#top {
+  position: relative;
+  z-index: 10;
+}
+
+nav div a img {
+  height: 60px;
+}
+nav div div ul li .nav-link:hover {
+  color: #5ee4fd;
+}
+nav div div ul li a .button-teal {
+  border: 2px solid #5ee4fd;
+}
+
+/* main-INDEX */
+.main-index {
+  /* home-banner-section */
+  /* home-info */
+}
+.main-index .home-padding-hero {
+  /*padding custom para seccion hero*/
+  padding-top: 4rem;
+  padding-bottom: 8rem;
+}
+.main-index .home-padding-hero .home-hero {
+  /* hero contenedor */
+  position: relative;
+  display: flex;
+  justify-content: end;
+}
+.main-index .home-padding-hero .home-hero .home-hero-info {
+  /* hero-contenedor de información */
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  bottom: 0%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+.main-index .home-padding-hero .home-hero .home-hero-image {
+  background-image: url(../assets/img/index/index-hero.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 70%;
+  min-width: 40rem;
+  height: 65vh;
+  max-height: 60rem;
+  min-height: 40rem;
+  border-radius: 1rem;
+}
+.main-index .home-padding-hero .home-hero .home-thumbnail-content {
+  /* hero-contenedor de thumbnails */
+  position: absolute;
+  right: -2rem;
+  bottom: -1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 2rem;
+}
+.main-index .home-padding-hero .home-hero .home-thumbnail-content .home-thumbnail1 {
+  background-image: url("../assets/img/index/index-hero-thumbnail1.jpg");
+  height: 10rem;
+  width: 10rem;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.5rem;
+}
+.main-index .home-padding-hero .home-hero .home-thumbnail-content .home-thumbnail2 {
+  background-image: url("../assets/img/index/index-hero-thumbnail2.jpg");
+  height: 10rem;
+  width: 10rem;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.5rem;
+}
+.main-index .home-padding-hero .home-hero .home-thumbnail-content .home-background-price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: rgba(3, 238, 255, 0.1490196078);
+  backdrop-filter: blur(8px);
+  padding: 1.5rem 1rem 1rem 1rem;
+  border-radius: 0.5rem;
+}
+.main-index .home-banner-content {
+  display: flex;
+  align-items: center;
+  height: 15rem;
+  overflow: hidden;
+}
+.main-index .home-banner-content .home-banner-text {
+  white-space: nowrap;
+  font-family: "Aldrich", sans-serif;
+  font-size: 6.5rem;
+  font-weight: 900;
+  line-height: 0.9;
+  padding-top: 1rem;
+}
+.main-index .home-info-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  /* home-photo-section */
+  /* home-nft-section */
+}
+.main-index .home-info-content .home-photo-content {
+  position: relative;
+  display: flex;
+}
+.main-index .home-info-content .home-photo-content .home-photo-image {
+  width: 70%;
+  min-width: 40rem;
+  height: 65vh;
+  max-height: 60rem;
+  min-height: 40rem;
+  object-fit: cover;
+  /* ajustar imagen dentro del div */
+  border-radius: 1rem;
+}
+.main-index .home-info-content .home-photo-content .home-photo-info {
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  right: 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  text-align: end;
+  gap: 2rem;
+}
+.main-index .home-info-content .home-photo-content .home-photo-info .align-right {
+  left: 1rem;
+}
+.main-index .home-info-content .home-nft-content {
+  position: relative;
+  display: flex;
+}
+.main-index .home-info-content .home-nft-content .home-nft-wrapper {
+  position: relative;
+}
+.main-index .home-info-content .home-nft-content .home-nft-wrapper .home-nft-image {
+  width: 100%;
+  height: 65vh;
+  max-height: 60rem;
+  min-height: 40rem;
+  object-fit: cover;
+  /* ajustar imagen dentro del div */
+  border-radius: 1rem;
+}
+.main-index .home-info-content .home-nft-content .home-nft-wrapper .home-nft-button {
+  /*estilos para flechas*/
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  height: 12rem;
+  background-color: rgba(3, 238, 255, 0.1490196078);
+  backdrop-filter: blur(8px);
+  border-radius: 0rem 0rem 1rem 0rem;
+}
+.main-index .home-info-content .home-nft-content .home-nft-wrapper .home-nft-button .nft-arrow-image {
+  /*estilos para flechas*/
+  height: 100%;
+  padding: 2rem;
+}
+.main-index .home-info-content .home-nft-info {
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* AUTOR-main */
+.main-autor .autor-bio-content {
+  display: grid;
+  grid-template-columns: auto 1fr 1fr;
+}
+.main-autor .autor-bio-content .teal-box-decor {
+  height: 50px;
+  width: 50px;
+}
+.main-autor .autor-bio-content .autor-bio-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0rem 4rem 0rem 0rem;
+}
+.main-autor .autor-bio-content .autor-photo {
+  min-height: 450px;
+  width: 100%;
+  min-width: 300px;
+  object-fit: cover;
+}
+.main-autor .autor-insta-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr auto;
+}
+.main-autor .autor-insta-content div .autor-instagram {
+  min-height: 450px;
+  width: 100%;
+  min-width: 300px;
+  object-fit: cover;
+}
+.main-autor .autor-insta-content .autor-insta-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0rem 4rem;
+}
+.main-autor .autor-insta-content .autor-nft-button {
+  background-color: #696969;
+  height: 12rem;
+  align-self: flex-end;
+}
+.main-autor .autor-insta-content .autor-nft-button .autor-arrow-image {
+  /*estilos para flechas*/
+  height: 100%;
+  padding: 2rem;
+}
+
+/* GALERÍA-main */
+.main-galeria .galeria-header-title {
+  position: relative;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  z-index: 1;
+}
+.main-galeria div .galeria-header-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 100%;
+  max-width: 4000px;
+  height: 70vh;
+  max-height: 900px;
+  min-height: 800px;
+  object-fit: cover;
+  object-position: 50% 40%;
+}
+.main-galeria .galeria-content {
+  position: relative;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  gap: 4rem;
+  padding-bottom: 8rem;
+}
+.main-galeria .galeria-content .galeria-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.main-galeria .galeria-content .galeria-images .galery-image-01 {
+  background-image: url("../assets/img/galeria/galery-01.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 450px;
+  width: 300px;
+}
+.main-galeria .galeria-content .galeria-images .galery-image-02 {
+  background-image: url("../assets/img/galeria/galery-02.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 600px;
+  width: 300px;
+}
+.main-galeria .galeria-content .galeria-images .galery-image-03 {
+  background-image: url("../assets/img/galeria/galery-03.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 300px;
+}
+.main-galeria .galeria-content .galeria-info-content {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 5rem;
+}
+.main-galeria .galeria-content .galeria-info-content .galeria-divisor-info {
+  height: 100%;
+  width: 2px;
+}
+.main-galeria .galeria-content .galeria-video-content {
+  display: flex;
+  justify-content: center;
+}
+
+/* NFT-main */
+.main-nft .nft-padding-hero {
+  /*padding custom nft*/
+  padding-top: 8rem;
+  padding-bottom: 1rem;
+}
+.main-nft .nft-padding-hero .nft-title-header {
+  display: flex;
+  margin: auto;
+  text-align: center;
+  max-width: 90rem;
+}
+.main-nft .nft-padding-hero .nft-title-header h1 .nft-title-image-01 {
+  position: relative;
+  top: -0.6rem;
+  object-fit: cover;
+  height: 90px;
+  width: 250px;
+  border-radius: 10rem;
+}
+.main-nft .nft-padding-hero .nft-title-header h1 .nft-title-image-02 {
+  position: relative;
+  top: -0.6rem;
+  object-fit: cover;
+  height: 90px;
+  width: 150px;
+  border-radius: 1rem;
+}
+.main-nft .nft-images-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+.main-nft .nft-images-content div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main-nft .nft-images-content .nft-image-01 {
+  grid-row: span 3;
+}
+.main-nft .nft-images-content .nft-image-03 {
+  grid-row: span 3;
+}
+.main-nft .nft-images-content .nft-button-content {
+  grid-column: span 2;
+  display: flex;
+  justify-content: center;
+}
+
+/* CONTACTOS-main */
+.main-contacto form label {
+  color: #111111;
+}
+
+/* FOOTER-estilos*/
+footer div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0rem;
+}
+footer div a .logo-footer {
+  height: 50px;
+}
+footer div .copyright {
+  color: #9f9f9f;
+  font-size: 0.7rem;
+}
+footer div .footer-links {
+  display: flex;
+  justify-content: end;
+}
+footer div .footer-links ul {
+  display: flex;
+  /* flex para links */
+  align-items: center;
+  column-gap: 2rem;
+  list-style: none;
+  margin-bottom: 0;
+  /*pisar margin BS*/
+  padding-left: 0;
+  /*pisar padding BS*/
+  /*quitar bullet*/
+}
+footer div .footer-links ul li a {
+  text-decoration: none;
+  /*quitar subrayado a links*/
+  color: #111111;
+}
+footer div .footer-links ul a .logo-insta-footer {
+  height: 30px;
+}
+
+/* ------ */
+/* ------ */
+/* TABLET - 991px y 768px */
+@media screen and (max-width: 991px) {
+  /* ESTILOS-global-tablet */
+  .container-large {
+    padding: 0rem 2rem;
+  }
+  .max-width-small {
+    max-width: 40vw;
+  }
+  .max-width-medium {
+    max-width: 60vw;
+  }
+  .padding-section {
+    /* padding general para secciones */
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  /* FONTS-estilos-tablet*/
+  h1 {
+    font-size: 9vw;
+  }
+  h3 {
+    font-size: 2.5rem;
+  }
+  .tittle-big {
+    /*títulos principales*/
+    font-size: 18vw;
+  }
+  /* HEADER-estilos-general-tablet*/
+  #top nav div .navbar-brand img {
+    height: 55px;
+  }
+  #top nav div .mobile-menu-button {
+    padding: 0;
+    /*pisar padding BS*/
+    border: 0;
+    /*pisar borde BS*/
+  }
+  #top nav div .mobile-menu-button:focus {
+    box-shadow: none;
+    /*pisar shador BS*/
+  }
+  #top nav div .mobile-menu-button .mobile-icon {
+    background-image: url(../assets/img/logos-iconos/mobile-icon.svg);
+    height: 40px;
+    width: 40px;
+  }
+  #top nav div .header-mobile-tablet {
+    position: absolute;
+    top: 90px;
+    background-color: rgba(17, 17, 17, 0.8980392157);
+    backdrop-filter: blur(20px);
+    width: 100%;
+    padding: 1rem 0rem 4rem 0rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    z-index: 10;
+  }
+  /* ------ */
+  /* main-INDEX-tablet*/
+  .main-index {
+    /* hero-section */
+    /* banner-section */
+    /* info-section */
+  }
+  .main-index .home-padding-hero {
+    padding-top: 1rem;
+    padding-bottom: 7rem;
+  }
+  .main-index .home-padding-hero .home-hero .home-hero-image {
+    min-width: 30rem;
+    max-height: 35rem;
+    min-height: 30rem;
+    border-radius: 1rem;
+  }
+  .main-index .home-padding-hero .home-hero .home-thumbnail-content {
+    /* hero-contenedor de thumbnails */
+    right: -1rem;
+    bottom: -3rem;
+    flex-direction: row;
+  }
+  .main-index .home-padding-hero .home-hero .home-thumbnail-content .home-thumbnail1 {
+    height: 7rem;
+    width: 7rem;
+  }
+  .main-index .home-padding-hero .home-hero .home-thumbnail-content .home-thumbnail2 {
+    height: 7rem;
+    width: 7rem;
+  }
+  .main-index .home-padding-hero .home-hero .home-thumbnail-content .home-background-price {
+    align-self: stretch;
+  }
+  .main-index .home-banner-content {
+    height: auto;
+  }
+  .main-index .home-banner-content .home-banner-text {
+    font-size: 9vw;
+    padding-top: 6%;
+    padding-bottom: 4%;
+  }
+  .main-index .home-info-content {
+    gap: 5rem;
+    /* nft-section */
+  }
+  .main-index .home-info-content .home-photo-content .home-photo-image {
+    min-width: 30rem;
+    min-height: 30rem;
+    max-height: 35rem;
+  }
+  .main-index .home-info-content .home-nft-content .home-nft-wrapper .home-nft-image {
+    min-width: 30rem;
+    min-height: 30rem;
+    max-height: 35rem;
+  }
+  .main-index .home-info-content .home-nft-content .home-nft-wrapper .home-nft-button {
+    height: 8rem;
+  }
+  .main-index .home-info-content .home-nft-content .home-nft-info {
+    left: 4rem;
+  }
+  /* ------ */
+  /* main-NFT-tablet*/
+  .main-nft .nft-padding-hero {
+    /*padding custom nft*/
+    padding-top: 4rem;
+    padding-bottom: 0rem;
+  }
+  .main-nft .nft-padding-hero .nft-title-header h1 .nft-title-image-01 {
+    top: -0.4rem;
+    height: 15%;
+    width: 18%;
+  }
+  .main-nft .nft-padding-hero .nft-title-header h1 .nft-title-image-02 {
+    top: -0.3rem;
+    height: 15%;
+    width: 25%;
+    border-radius: 0.5rem;
+  }
+  /* ------ */
+  /* FOOTER-estilos-general-tablet */
+  footer {
+    padding: 1rem 0rem;
+  }
+  footer div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 70px auto;
+    padding: 0rem 0rem;
+  }
+  footer div a .logo-footer {
+    height: 45px;
+  }
+  footer div .copyright {
+    display: flex;
+    padding: 0.5rem 0rem;
+    color: #9f9f9f;
+    font-size: 0.7rem;
+    order: 2;
+    grid-column: 1/3;
+    justify-content: center;
+    text-align: center;
+  }
+  footer div .footer-links ul {
+    column-gap: 1rem;
+  }
+}
+/* ------ */
+/* ------ */
+/* MOBILE - 767px y 576 */
+@media screen and (max-width: 767px) {
+  /* ESTILOS-global-mobil */
+  .container-large {
+    padding: 0rem 1.5rem;
+  }
+  .max-width-tiny {
+    max-width: 15rem;
+  }
+  .max-width-small {
+    max-width: 100%;
+  }
+  .max-width-medium {
+    max-width: 100%;
+  }
+  .padding-section {
+    /* padding general para secciones */
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  /* FONTS-estilos-tablet*/
+  h1 {
+    font-size: 12vw;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  h5 {
+    font-size: 1.25rem;
+  }
+  .tittle-big {
+    /*títulos principales*/
+    font-size: 18vw;
+  }
+  /* HEADER-estilos-general-mobile*/
+  #top .nav-pt-mobile {
+    /* pisar padding BS */
+    padding-top: 1rem !important;
+  }
+  #top nav div .navbar-brand img {
+    height: 50px;
+  }
+  /* ------ */
+  /* main-INDEX-mobile*/
+  .main-index {
+    /* banner-section */
+    /* info-section */
+  }
+  .main-index .home-padding-hero {
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+  }
+  .main-index .home-padding-hero .home-hero {
+    position: relative;
+    display: grid;
+    gap: 1.5rem;
+  }
+  .main-index .home-padding-hero .home-hero .home-hero-info {
+    position: relative;
+    order: 2;
+  }
+  .main-index .home-padding-hero .home-hero .home-hero-image {
+    background-position: bottom;
+    width: 100%;
+    min-width: auto;
+    max-height: 40rem;
+    min-height: 30rem;
+    border-radius: 0.75rem;
+  }
+  .main-index .home-padding-hero .home-hero .home-thumbnail-content {
+    /* hero-contenedor de thumbnails */
+    position: absolute;
+    right: 0rem;
+    bottom: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 0rem;
+  }
+  .main-index .home-padding-hero .home-hero .home-thumbnail-content .home-thumbnail1 {
+    display: none;
+  }
+  .main-index .home-padding-hero .home-hero .home-thumbnail-content .home-thumbnail2 {
+    display: none;
+  }
+  .main-index .home-padding-hero .home-hero .home-thumbnail-content .home-background-price {
+    padding: 1rem 1rem 1rem 0.75rem;
+  }
+  .main-index .home-banner-content .home-banner-text {
+    font-size: 12vw;
+  }
+  .main-index .home-info-content {
+    gap: 4rem;
+    /* nft-section */
+  }
+  .main-index .home-info-content .home-photo-content {
+    display: grid;
+  }
+  .main-index .home-info-content .home-photo-content .home-photo-image {
+    width: 100%;
+    min-width: auto;
+    min-height: 15rem;
+    max-height: 20rem;
+    border-radius: 0.75rem;
+  }
+  .main-index .home-info-content .home-photo-content .home-photo-info {
+    position: relative;
+    top: -1rem;
+    align-items: start;
+    text-align: left;
+  }
+  .main-index .home-info-content .home-photo-content .home-photo-info .align-right {
+    left: -0.5rem;
+  }
+  .main-index .home-info-content .home-nft-content {
+    display: grid;
+  }
+  .main-index .home-info-content .home-nft-content .home-nft-wrapper .home-nft-image {
+    width: 100%;
+    min-width: auto;
+    min-height: 15rem;
+    max-height: 20rem;
+  }
+  .main-index .home-info-content .home-nft-content .home-nft-wrapper .home-nft-button {
+    height: 5rem;
+  }
+  .main-index .home-info-content .home-nft-content .home-nft-wrapper .home-nft-button .nft-arrow-image {
+    /*estilos para flechas*/
+    height: 100%;
+    padding: 1rem;
+  }
+  .main-index .home-info-content .home-nft-content .home-nft-info {
+    position: relative;
+    top: -1rem;
+    left: 0rem;
+  }
+  .main-index .home-info-content .home-nft-content .home-nft-info .align-left {
+    left: -0.5rem;
+  }
+  /* ------ */
+  /* main-NFT-monile*/
+  .main-nft .nft-padding-hero .nft-title-header h1 .nft-title-image-01 {
+    top: -0.3rem;
+    height: 13%;
+    width: 25%;
+  }
+  .main-nft .nft-padding-hero .nft-title-header h1 .nft-title-image-02 {
+    top: -0.3rem;
+    height: 13%;
+    width: 25%;
+    border-radius: 0.5rem;
+  }
+  .main-nft .nft-images-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 0rem;
+  }
+  .main-nft .nft-images-content .nft-button-content {
+    grid-column: auto;
+  }
+  footer div {
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 0rem;
+    gap: 1rem;
+  }
+  footer div .copyright {
+    padding: 0rem 0rem;
+  }
+  footer div .footer-links {
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

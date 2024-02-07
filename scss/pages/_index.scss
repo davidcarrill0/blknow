@@ -1,0 +1,188 @@
+/* main-INDEX */
+.main-index {
+    .home-padding-hero {
+        /*padding custom para seccion hero*/
+        padding-top: 4rem;
+        padding-bottom: 8rem;
+
+        .home-hero {
+            /* hero contenedor */
+            position: relative;
+            display: flex;
+            justify-content: end;
+
+            .home-hero-info {
+                /* hero-contenedor de información */
+                position: absolute;
+                left: 0%;
+                top: 0%;
+                bottom: 0%;
+                z-index: 2;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 1rem;
+            }
+
+            .home-hero-image {
+                background-image: url(../assets/img/index/index-hero.jpg);
+                background-size: cover;
+                background-position: center;
+                width: 70%;
+                min-width: 40rem;
+                height: 65vh;
+                max-height: 60rem;
+                min-height: 40rem;
+                border-radius: 1rem;
+            }
+
+            .home-thumbnail-content {
+                /* hero-contenedor de thumbnails */
+                position: absolute;
+                right: -2rem;
+                bottom: -1.5rem;
+                display: flex;
+                flex-direction: column;
+                align-items: end;
+                gap: 2rem;
+
+                .home-thumbnail1 {
+                    background-image: url("../assets/img/index/index-hero-thumbnail1.jpg");
+                    height: 10rem;
+                    width: 10rem;
+                    background-size: cover;
+                    background-position: center;
+                    border-radius: 0.5rem;
+                }
+
+                .home-thumbnail2 {
+                    background-image: url("../assets/img/index/index-hero-thumbnail2.jpg");
+                    height: 10rem;
+                    width: 10rem;
+                    background-size: cover;
+                    background-position: center;
+                    border-radius: 0.5rem;
+                }
+
+                .home-background-price {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 0.5rem;
+                    background-color: #03eeff26;
+                    backdrop-filter: blur(8px);
+                    padding: 1.5rem 1rem 1rem 1rem;
+                    border-radius: 0.5rem;
+                }
+
+            }
+        }
+    }
+
+    /* home-banner-section */
+    .home-banner-content {
+        display: flex;
+        align-items: center;
+        height: 15rem;
+        overflow: hidden;
+
+        .home-banner-text {
+            white-space: nowrap;
+            font-family: 'Aldrich', sans-serif;
+            font-size: 6.5rem;
+            font-weight: 900;
+            line-height: 0.9;
+            padding-top: 1rem;
+        }
+    }
+
+    /* home-info */
+    .home-info-content {
+        display: flex;
+        flex-direction: column;
+        gap: 8rem;
+
+        /* home-photo-section */
+        .home-photo-content {
+            position: relative;
+            display: flex;
+
+            .home-photo-image {
+                width: 70%;
+                min-width: 40rem;
+                height: 65vh;
+                max-height: 60rem;
+                min-height: 40rem;
+                object-fit: cover;
+                /* ajustar imagen dentro del div */
+                border-radius: 1rem;
+            }
+
+            .home-photo-info {
+                position: absolute;
+                top: 0%;
+                bottom: 0%;
+                right: 0%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: end;
+                text-align: end;
+                gap: 2rem;
+
+                .align-right {
+                    left: 1rem;
+                }
+            }
+        }
+
+        /* home-nft-section */
+        .home-nft-content {
+            position: relative;
+            display: flex;
+
+            .home-nft-wrapper {
+                position: relative;
+
+                .home-nft-image {
+                    width: 100%;
+                    height: 65vh;
+                    max-height: 60rem;
+                    min-height: 40rem;
+                    object-fit: cover;
+                    /* ajustar imagen dentro del div */
+                    border-radius: 1rem;
+                }
+
+                .home-nft-button {
+                    /*estilos para flechas*/
+                    position: absolute;
+                    bottom: 0%;
+                    right: 0%;
+                    height: 12rem;
+                    background-color: #03eeff26;
+                    backdrop-filter: blur(8px);
+                    border-radius: 0rem 0rem 1rem 0rem;
+
+                    .nft-arrow-image {
+                        /*estilos para flechas*/
+                        height: 100%;
+                        padding: 2rem;
+                    }
+                }
+            }
+        }
+
+        .home-nft-info {
+            position: absolute;
+            top: 0%;
+            bottom: 0%;
+            left: 8rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 2rem;
+        }
+    }
+
+}

@@ -11,6 +11,8 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- link a CSS -->
     <link rel="stylesheet" href="../css/style.css">
+    <!-- Link a scss-->
+    <link rel="stylesheet" href="../css/main.css">
     <title>BLKNOW</title>
 
     <!--Fuente importada de web-->
@@ -39,16 +41,16 @@
                             <a class="nav-link" href="../index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../pages/autor.html">Autor</a>
+                            <a class="nav-link" href="./autor.html">Autor</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../pages/galeria.html">Galería</a>
+                            <a class="nav-link" href="./galeria.html">Galería</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../pages/contacto.html">Contactos</a>
+                            <a class="nav-link" href="./contacto.html">Contactos</a>
                         </li>
                         <li>
-                            <a class="nav-link px-0 active" aria-current="page" href="../pages/nft.html">
+                            <a class="nav-link px-0 active" aria-current="page" href="./nft.html">
                                 <!--enlaces del botón en nav-->
                                 <button class="button button-teal">NFT</button>
                                 <!--clase2 para variar propiedad de la clase 1-->
@@ -61,7 +63,7 @@
         </nav>
     </header>
 
-    <main>
+    <main class="main-contacto">
         <section class="container-large padding-section">
             <div>
                 <p class="tittle-big">CONTACTO</p>
@@ -85,14 +87,18 @@
                                 <option value="fotos">NFT</option>
                             </select>
                             <label for="Comentario">Comentario:</label>
-                            <textarea name="Comentario" id="comentario" cols="30" rows="10">Escribe aquí tu comentario...</textarea>
+                            <textarea name="Comentario" id="comentario" cols="30"
+                                rows="10">Escribe aquí tu comentario...</textarea>
                             <input class="button button-secondary" type="submit" value="ENVIAR">
                         </form>
                     </div>
                 </div>
             </div>
             <div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.5544482252894!2d-73.99597355!3d40.7058094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a2343ce7b2b%3A0x2526ddba7abd465c!2sBrooklyn%20Bridge!5e0!3m2!1sen!2sus!4v1702269921615!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.5544482252894!2d-73.99597355!3d40.7058094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a2343ce7b2b%3A0x2526ddba7abd465c!2sBrooklyn%20Bridge!5e0!3m2!1sen!2sus!4v1702269921615!5m2!1sen!2sus"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
     </main>
