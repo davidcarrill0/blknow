@@ -8,17 +8,10 @@
 
 /* estilos globales */
 /* para ver cajas temporal */
-/* * {
-    border: 1px solid rgb(0, 255, 81);
-} */
-html {
-  background-color: rgb(136, 136, 136);
-}
-
 body {
   font-family: "avant", sans-serif;
   /*pisar font BS*/
-  color: white;
+  color: #ffffff;
   /*pisar color BS*/
 }
 
@@ -140,9 +133,9 @@ p {
 /* botones-estilos-global */
 .button {
   background-color: transparent;
-  border: 2px solid white;
+  border: 2px solid #5ee4fd;
   border-radius: 100px;
-  color: white;
+  color: #ffffff;
   padding: 10px 40px;
   cursor: pointer;
 }
@@ -150,6 +143,12 @@ p {
 .button-secondary {
   background-color: #111111;
   border: 0px;
+}
+
+.autor-nft-button {
+  background-color: #5ee4fd;
+  height: 12rem;
+  align-self: flex-end;
 }
 
 /* header-estilos-general*/
@@ -163,9 +162,6 @@ nav div a img {
 }
 nav div div ul li .nav-link:hover {
   color: #5ee4fd;
-}
-nav div div ul li a .button-teal {
-  border: 2px solid #5ee4fd;
 }
 
 /* main-INDEX */
@@ -182,7 +178,10 @@ nav div div ul li a .button-teal {
   /* hero contenedor */
   position: relative;
   display: flex;
+  flex-direction: row;
   justify-content: end;
+  align-content: center;
+  align-items: center;
 }
 .main-index .home-padding-hero .home-hero .home-hero-info {
   /* hero-contenedor de información */
@@ -194,6 +193,8 @@ nav div div ul li a .button-teal {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-content: start;
+  align-items: start;
   gap: 1rem;
 }
 .main-index .home-padding-hero .home-hero .home-hero-image {
@@ -205,7 +206,7 @@ nav div div ul li a .button-teal {
   height: 65vh;
   max-height: 60rem;
   min-height: 40rem;
-  border-radius: 1rem;
+  border-radius: 1.5rem;
 }
 .main-index .home-padding-hero .home-hero .home-thumbnail-content {
   /* hero-contenedor de thumbnails */
@@ -214,6 +215,8 @@ nav div div ul li a .button-teal {
   bottom: -1.5rem;
   display: flex;
   flex-direction: column;
+  justify-content: start;
+  align-content: center;
   align-items: end;
   gap: 2rem;
 }
@@ -223,7 +226,7 @@ nav div div ul li a .button-teal {
   width: 10rem;
   background-size: cover;
   background-position: center;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
 }
 .main-index .home-padding-hero .home-hero .home-thumbnail-content .home-thumbnail2 {
   background-image: url("../assets/img/index/index-hero-thumbnail2.jpg");
@@ -231,17 +234,19 @@ nav div div ul li a .button-teal {
   width: 10rem;
   background-size: cover;
   background-position: center;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
 }
 .main-index .home-padding-hero .home-hero .home-thumbnail-content .home-background-price {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-content: center;
   align-items: center;
   gap: 0.5rem;
   background-color: rgba(3, 238, 255, 0.1490196078);
   backdrop-filter: blur(8px);
   padding: 1.5rem 1rem 1rem 1rem;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
 }
 .main-index .home-banner-content {
   display: flex;
@@ -276,7 +281,7 @@ nav div div ul li a .button-teal {
   min-height: 40rem;
   object-fit: cover;
   /* ajustar imagen dentro del div */
-  border-radius: 1rem;
+  border-radius: 1.5rem;
 }
 .main-index .home-info-content .home-photo-content .home-photo-info {
   position: absolute;
@@ -307,7 +312,7 @@ nav div div ul li a .button-teal {
   min-height: 40rem;
   object-fit: cover;
   /* ajustar imagen dentro del div */
-  border-radius: 1rem;
+  border-radius: 1.5rem;
 }
 .main-index .home-info-content .home-nft-content .home-nft-wrapper .home-nft-button {
   /*estilos para flechas*/
@@ -317,7 +322,7 @@ nav div div ul li a .button-teal {
   height: 12rem;
   background-color: rgba(3, 238, 255, 0.1490196078);
   backdrop-filter: blur(8px);
-  border-radius: 0rem 0rem 1rem 0rem;
+  border-radius: 0rem 0rem 1.5rem 0rem;
 }
 .main-index .home-info-content .home-nft-content .home-nft-wrapper .home-nft-button .nft-arrow-image {
   /*estilos para flechas*/
@@ -332,6 +337,8 @@ nav div div ul li a .button-teal {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-content: center;
+  align-items: start;
   gap: 2rem;
 }
 
@@ -373,11 +380,6 @@ nav div div ul li a .button-teal {
   justify-content: center;
   gap: 1rem;
   padding: 0rem 4rem;
-}
-.main-autor .autor-insta-content .autor-nft-button {
-  background-color: #696969;
-  height: 12rem;
-  align-self: flex-end;
 }
 .main-autor .autor-insta-content .autor-nft-button .autor-arrow-image {
   /*estilos para flechas*/
@@ -665,14 +667,17 @@ footer div .footer-links ul a .logo-insta-footer {
     min-width: 30rem;
     min-height: 30rem;
     max-height: 35rem;
+    border-radius: 1rem;
   }
   .main-index .home-info-content .home-nft-content .home-nft-wrapper .home-nft-image {
     min-width: 30rem;
     min-height: 30rem;
     max-height: 35rem;
+    border-radius: 1rem;
   }
   .main-index .home-info-content .home-nft-content .home-nft-wrapper .home-nft-button {
     height: 8rem;
+    border-radius: 0rem 0rem 1rem 0rem;
   }
   .main-index .home-info-content .home-nft-content .home-nft-info {
     left: 4rem;
@@ -797,12 +802,9 @@ footer div .footer-links ul a .logo-insta-footer {
   .main-index .home-padding-hero .home-hero .home-thumbnail-content {
     /* hero-contenedor de thumbnails */
     position: absolute;
+    top: 0rem;
     right: 0rem;
     bottom: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    gap: 0rem;
   }
   .main-index .home-padding-hero .home-hero .home-thumbnail-content .home-thumbnail1 {
     display: none;
@@ -811,7 +813,8 @@ footer div .footer-links ul a .logo-insta-footer {
     display: none;
   }
   .main-index .home-padding-hero .home-hero .home-thumbnail-content .home-background-price {
-    padding: 1rem 1rem 1rem 0.75rem;
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 0.75rem;
   }
   .main-index .home-banner-content .home-banner-text {
     font-size: 12vw;
@@ -847,9 +850,11 @@ footer div .footer-links ul a .logo-insta-footer {
     min-width: auto;
     min-height: 15rem;
     max-height: 20rem;
+    border-radius: 0.75rem;
   }
   .main-index .home-info-content .home-nft-content .home-nft-wrapper .home-nft-button {
     height: 5rem;
+    border-radius: 0rem 0rem 0.75rem 0rem;
   }
   .main-index .home-info-content .home-nft-content .home-nft-wrapper .home-nft-button .nft-arrow-image {
     /*estilos para flechas*/

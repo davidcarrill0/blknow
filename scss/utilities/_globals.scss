@@ -1,22 +1,22 @@
 /* estilos globales */
 /* para ver cajas temporal */
-/* * {
-    border: 1px solid rgb(0, 255, 81);
-} */
+// * {
+//     border: 1px solid rgb(0, 255, 81);
+// }
 
-html {
-    background-color: rgb(136, 136, 136);
-}
+// html {
+//     background-color: rgb(136, 136, 136);
+// }
 
 body {
     font-family: "avant", sans-serif;
     /*pisar font BS*/
-    color: white;
+    color: $text-primaryt;
     /*pisar color BS*/
 }
 
 .background-color-black {
-    background-color: #111111;
+    background-color: $background-primary;
 }
 
 .background-color-white {
@@ -28,11 +28,11 @@ body {
 }
 
 .background-color-darkgrey {
-    background-color: #9f9f9f;
+    background-color: $background-secondary;
 }
 
 .background-color-teal {
-    background-color: #5ee4fd;
+    background-color: $color-brand;
 }
 
 .container-large {
@@ -51,8 +51,8 @@ body {
 
 .padding-section {
     /*padding global para secciones*/
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+    padding-top: map-get($map: $padding-section, $key: top);
+    padding-bottom: map-get($map: $padding-section, $key: bottom);;
 }
 
 /* fonts-estilos-globales*/
@@ -128,5 +128,5 @@ p {
 }
 
 .text-color-gray {
-    color: #9f9f9f;
+    color: $text-secondary;
 }

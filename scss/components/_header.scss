@@ -13,12 +13,9 @@
             div {
                 ul {
                     li {
-                        .nav-link:hover {
-                            color: #5ee4fd;
-                        }
-                        a{
-                            .button-teal {
-                                border: 2px solid #5ee4fd;
+                        .nav-link {
+                            &:hover { 
+                                color: $color-brand;
                             }
                         }
                     }

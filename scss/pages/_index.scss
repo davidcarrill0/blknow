@@ -8,8 +8,7 @@
         .home-hero {
             /* hero contenedor */
             position: relative;
-            display: flex;
-            justify-content: end;
+            @include flex(row, end, center, center);
 
             .home-hero-info {
                 /* hero-contenedor de información */
@@ -18,9 +17,7 @@
                 top: 0%;
                 bottom: 0%;
                 z-index: 2;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
+                @include flex(column, center, start, start);
                 gap: 1rem;
             }
 
@@ -33,7 +30,7 @@
                 height: 65vh;
                 max-height: 60rem;
                 min-height: 40rem;
-                border-radius: 1rem;
+                border-radius: nth($list: $radius, $n: 1);
             }
 
             .home-thumbnail-content {
@@ -41,9 +38,10 @@
                 position: absolute;
                 right: -2rem;
                 bottom: -1.5rem;
-                display: flex;
-                flex-direction: column;
-                align-items: end;
+                @include flex(column, start, center, end);
+                // display: flex;
+                // flex-direction: column;
+                // align-items: end;
                 gap: 2rem;
 
                 .home-thumbnail1 {
@@ -52,7 +50,7 @@
                     width: 10rem;
                     background-size: cover;
                     background-position: center;
-                    border-radius: 0.5rem;
+                    border-radius: nth($list: $radius, $n: 3);
                 }
 
                 .home-thumbnail2 {
@@ -61,18 +59,19 @@
                     width: 10rem;
                     background-size: cover;
                     background-position: center;
-                    border-radius: 0.5rem;
+                    border-radius: nth($list: $radius, $n: 3);
                 }
 
                 .home-background-price {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
+                    @include flex(column, center, center, center);
+                    // display: flex;
+                    // flex-direction: column;
+                    // align-items: center;
                     gap: 0.5rem;
                     background-color: #03eeff26;
                     backdrop-filter: blur(8px);
                     padding: 1.5rem 1rem 1rem 1rem;
-                    border-radius: 0.5rem;
+                    border-radius: nth($list: $radius, $n: 3);
                 }
 
             }
@@ -115,7 +114,7 @@
                 min-height: 40rem;
                 object-fit: cover;
                 /* ajustar imagen dentro del div */
-                border-radius: 1rem;
+                border-radius: nth($list: $radius, $n: 1);
             }
 
             .home-photo-info {
@@ -151,7 +150,7 @@
                     min-height: 40rem;
                     object-fit: cover;
                     /* ajustar imagen dentro del div */
-                    border-radius: 1rem;
+                    border-radius: nth($list: $radius, $n: 1);
                 }
 
                 .home-nft-button {
@@ -162,7 +161,7 @@
                     height: 12rem;
                     background-color: #03eeff26;
                     backdrop-filter: blur(8px);
-                    border-radius: 0rem 0rem 1rem 0rem;
+                    border-radius: 0rem 0rem nth($list: $radius, $n: 1) 0rem;
 
                     .nft-arrow-image {
                         /*estilos para flechas*/
@@ -178,9 +177,10 @@
             top: 0%;
             bottom: 0%;
             left: 8rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            @include flex(column, center, center, start);
+            // display: flex;
+            // flex-direction: column;
+            // justify-content: center;
             gap: 2rem;
         }
     }
