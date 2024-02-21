@@ -6,31 +6,29 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         gap: 2rem;
         z-index: 1;
     }
 
-    div {
-        .galeria-header-background {
-            position: absolute;
-            top: 0;
-            right: 0;
-            left: 0;
-            margin: auto;
-            width: 100%;
-            max-width: 4000px;
-            height: 70vh;
-            max-height: 900px;
-            min-height: 800px;
-            object-fit: cover;
-            object-position: 50% 40%;
-        }
+    .galeria-header-background {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        width: 100%;
+        max-width: 4000px;
+        height: 70vh;
+        max-height: 900px;
+        min-height: 800px;
+        object-fit: cover;
+        object-position: 50% 40%;
     }
 
     .galeria-content {
         position: relative;
         display: grid;
-        grid-template-rows: auto auto auto;
         gap: 4rem;
         padding-bottom: 8rem;
 
@@ -42,29 +40,21 @@
 
             .galery-image-01 {
                 background-image: url("../assets/img/galeria/galery-01.jpg");
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-                height: 450px;
-                width: 300px;
+                /* extend de imagen */
+                @extend %galery-image;
             }
 
             .galery-image-02 {
                 background-image: url("../assets/img/galeria/galery-02.jpg");
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
+                /* extend de imagen */
+                @extend %galery-image;
                 height: 600px;
-                width: 300px;
             }
 
             .galery-image-03 {
                 background-image: url("../assets/img/galeria/galery-03.jpg");
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-                height: 400px;
-                width: 300px;
+                /* extend de imagen */
+                @extend %galery-image;
             }
         }
 
@@ -83,6 +73,11 @@
         .galeria-video-content {
             display: flex;
             justify-content: center;
+
+            .galeria-video {
+                aspect-ratio: 16 / 9;
+                width: 80%;
+            }
         }
     }
 }

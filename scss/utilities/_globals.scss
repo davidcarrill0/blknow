@@ -1,13 +1,10 @@
-/* estilos globales */
 /* para ver cajas temporal */
 // * {
 //     border: 1px solid rgb(0, 255, 81);
 // }
 
-// html {
-//     background-color: rgb(136, 136, 136);
-// }
 
+/* estilos globales */
 body {
     font-family: "avant", sans-serif;
     /*pisar font BS*/
@@ -51,8 +48,10 @@ body {
 
 .padding-section {
     /*padding global para secciones*/
+    /* MAP de padding */
     padding-top: map-get($map: $padding-section, $key: top);
-    padding-bottom: map-get($map: $padding-section, $key: bottom);;
+    padding-bottom: map-get($map: $padding-section, $key: bottom);
+    ;
 }
 
 /* fonts-estilos-globales*/

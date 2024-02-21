@@ -4,35 +4,35 @@
         /*padding custom nft*/
         padding-top: 8rem;
         padding-bottom: 1rem;
+
         .nft-title-header {
             display: flex;
             margin: auto;
             text-align: center;
             max-width: 90rem;
+
             h1 {
                 .nft-title-image-01 {
-                    position: relative;
-                    top: -0.6rem;
-                    object-fit: cover;
-                    height: 90px;
-                    width: 250px;
+                    /* extend */
+                    @extend %nft-title-image;
                     border-radius: 10rem;
                 }
+
                 .nft-title-image-02 {
-                    position: relative;
-                    top: -0.6rem;
-                    object-fit: cover;
-                    height: 90px;
+                    /* extend */
+                    @extend %nft-title-image;
                     width: 150px;
                     border-radius: 1rem;
                 }
             }
         }
     }
+
     .nft-images-content {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1.5rem;
+
         div {
             img {
                 width: 100%;
@@ -40,19 +40,20 @@
                 object-fit: cover;
             }
         }
+
         .nft-image-01 {
             grid-row: span 3;
         }
-        
+
         .nft-image-03 {
             grid-row: span 3;
         }
-        
+
         .nft-button-content {
             grid-column: span 2;
             display: flex;
             justify-content: center;
         }
-        
+
     }
 }

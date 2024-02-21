@@ -2,25 +2,26 @@
 .main-autor {
     .autor-bio-content {
         display: grid;
-        grid-template-columns: auto 1fr 1fr;
-
-        .teal-box-decor {
-            height: 50px;
-            width: 50px;
-        }
+        grid-template-columns: 1fr 1fr;
 
         .autor-bio-info {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            gap: 1rem;
-            padding: 0rem 4rem 0rem 0rem;
+            align-items: start;
+            gap: 2rem;
+            .autor-title {
+                position: relative;
+                font-size: 10rem;
+                line-height: 0.5;
+                left: -1rem;
+            }
         }
 
         .autor-photo {
-            min-height: 450px;
+            aspect-ratio: 1 / 1;
             width: 100%;
-            min-width: 300px;
+            min-height: 600px;
             object-fit: cover;
         }
     }
@@ -32,12 +33,11 @@
 
         div {
             .autor-instagram {
-                min-height: 450px;
                 width: 100%;
-                min-width: 300px;
+                height: 100%;
+                min-height: 400px;
                 object-fit: cover;
             }
-
         }
 
         .autor-insta-info {
@@ -45,15 +45,19 @@
             flex-direction: column;
             justify-content: center;
             gap: 1rem;
-            padding: 0rem 4rem;
+            padding: 2rem 3rem;
         }
 
         .autor-nft-button {
             .autor-arrow-image {
                 /*estilos para flechas*/
-                height: 100%;
-                padding: 2rem;
+                padding: 1rem;
             }
+        }
+        .autor-nft-button {
+            background-color: $color-brand;
+            min-width: 100px;
+            align-self: flex-end;
         }
     }
 }

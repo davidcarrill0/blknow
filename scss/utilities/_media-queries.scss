@@ -168,6 +168,77 @@
         }
     }
 
+
+    /* ------ */
+    /* main-AUTOR-tablet*/
+    .main-autor {
+        .autor-bio-content {
+            .autor-bio-info {
+                .autor-title {
+                    font-size: 15vw;
+                }
+            }
+
+            .autor-photo {
+                min-height: 500px;
+            }
+        }
+
+        .autor-insta-content {
+            .autor-insta-info {
+                padding: 2rem 2rem;
+            }
+        }
+    }
+
+
+    /* ------ */
+    /* main-CONTACTO-tablet*/
+    .main-contacto {
+        .contacto-title-content {
+            margin-bottom: 4rem;
+
+            .contacto-title {
+                font-size: 15vw;
+            }
+        }
+
+        .contacto-content {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 500px;
+        }
+    }
+
+    /* ------ */
+    /* main-GALERIA-tablet*/
+    .main-galeria {
+        .galeria-content {
+            .galeria-images {
+                gap: 1.5rem;
+
+                .galery-image-01 {
+                    height: 400px;
+                }
+
+                .galery-image-02 {
+                    height: 550px;
+                }
+
+                .galery-image-03 {
+                    height: 400px;
+                }
+            }
+
+            .galeria-video-content {
+                .galeria-video {
+                    aspect-ratio: 16 / 9;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+
     /* ------ */
     /* main-NFT-tablet*/
     .main-nft {
@@ -281,6 +352,7 @@
     .tittle-big {
         /*títulos principales*/
         font-size: 18vw;
+        left: 0rem;
     }
 
 
@@ -401,6 +473,7 @@
                     .home-nft-button {
                         height: 5rem;
                         border-radius: 0rem 0rem nth($list: $radius, $n: 3) 0rem;
+
                         .nft-arrow-image {
                             /*estilos para flechas*/
                             height: 100%;
@@ -421,6 +494,126 @@
             }
         }
     }
+
+    /* ------ */
+    /* main-AUTOR-mobile*/
+    .main-autor {
+        .autor-bio-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            margin-bottom: 4rem;
+
+            .autor-bio-info {
+                .autor-title {
+                    font-size: 18vw;
+                    left: -0.5rem;
+                }
+            }
+
+            .autor-photo {
+                min-height: 500px;
+            }
+        }
+
+        .autor-insta-content {
+            grid-template-columns: 1fr;
+
+            .autor-insta-info {
+                padding: 4rem 2rem;
+            }
+
+            .autor-nft-button {
+                position: relative;
+                top: -2rem;
+                margin: auto;
+                width: 100px;
+            }
+        }
+    }
+
+
+
+    /* ------ */
+    /* main-CONTACTO-mobile*/
+    .main-contacto {
+        .contacto-title-content {
+            margin-bottom: 3rem;
+        }
+
+        .contacto-content {
+            grid-template-rows: 1fr 500px;
+
+            .contacto-form-content {
+                gap: 1rem;
+                padding: 3em 2rem 3rem 2rem;
+
+                .contact-form-component {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    column-gap: 0rem;
+                    row-gap: 0rem;
+
+                    label {
+                        margin-top: 1rem;
+                    }
+
+                    .form-button {
+                        margin-top: 2rem;
+                        grid-column: 1 / 2;
+                    }
+                }
+            }
+        }
+    }
+
+    /* ------ */
+    /* main-GALERIA-mobile*/
+    .main-galeria {
+        .galeria-content {
+            .galeria-images {
+                flex-direction: column;
+                gap: 2rem;
+
+                .galery-image-01 {
+                    height: 600px;
+                }
+
+                .galery-image-02 {
+                    height: 600px;
+                }
+
+                .galery-image-03 {
+                    height: 600px;
+                }
+            }
+
+            .galeria-info-content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                gap: 2.5rem;
+
+                .galeria-divisor-info {
+                    width: 120px;
+                    height: 2px;
+                }
+            }
+
+            .galeria-video-content {
+                .galeria-video {
+                    aspect-ratio: 16 / 9;
+                    width: 100%;
+                    height: 600px;
+                }
+            }
+        }
+    }
+
+
+
 
     /* ------ */
     /* main-NFT-monile*/

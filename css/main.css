@@ -6,8 +6,8 @@
   box-sizing: border-box;
 }
 
-/* estilos globales */
 /* para ver cajas temporal */
+/* estilos globales */
 body {
   font-family: "avant", sans-serif;
   /*pisar font BS*/
@@ -51,6 +51,7 @@ body {
 
 .padding-section {
   /*padding global para secciones*/
+  /* MAP de padding */
   padding-top: 8rem;
   padding-bottom: 8rem;
 }
@@ -130,6 +131,30 @@ p {
   color: #9f9f9f;
 }
 
+.main-index .home-padding-hero .home-hero .home-thumbnail-content .home-thumbnail2, .main-index .home-padding-hero .home-hero .home-thumbnail-content .home-thumbnail1 {
+  height: 10rem;
+  width: 10rem;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.75rem;
+}
+
+.main-galeria .galeria-content .galeria-images .galery-image-03, .main-galeria .galeria-content .galeria-images .galery-image-02, .main-galeria .galeria-content .galeria-images .galery-image-01 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 450px;
+  width: 100%;
+}
+
+.main-nft .nft-padding-hero .nft-title-header h1 .nft-title-image-02, .main-nft .nft-padding-hero .nft-title-header h1 .nft-title-image-01 {
+  position: relative;
+  top: -0.6rem;
+  object-fit: cover;
+  height: 90px;
+  width: 250px;
+}
+
 /* botones-estilos-global */
 .button {
   background-color: transparent;
@@ -143,12 +168,6 @@ p {
 .button-secondary {
   background-color: #111111;
   border: 0px;
-}
-
-.autor-nft-button {
-  background-color: #5ee4fd;
-  height: 12rem;
-  align-self: flex-end;
 }
 
 /* header-estilos-general*/
@@ -177,6 +196,7 @@ nav div div ul li .nav-link:hover {
 .main-index .home-padding-hero .home-hero {
   /* hero contenedor */
   position: relative;
+  /* mixin de flex */
   display: flex;
   flex-direction: row;
   justify-content: end;
@@ -190,6 +210,7 @@ nav div div ul li .nav-link:hover {
   top: 0%;
   bottom: 0%;
   z-index: 2;
+  /* mixin de flex */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -206,6 +227,7 @@ nav div div ul li .nav-link:hover {
   height: 65vh;
   max-height: 60rem;
   min-height: 40rem;
+  /* List de imagen radius */
   border-radius: 1.5rem;
 }
 .main-index .home-padding-hero .home-hero .home-thumbnail-content {
@@ -213,6 +235,7 @@ nav div div ul li .nav-link:hover {
   position: absolute;
   right: -2rem;
   bottom: -1.5rem;
+  /* mixin de flex */
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -222,21 +245,14 @@ nav div div ul li .nav-link:hover {
 }
 .main-index .home-padding-hero .home-hero .home-thumbnail-content .home-thumbnail1 {
   background-image: url("../assets/img/index/index-hero-thumbnail1.jpg");
-  height: 10rem;
-  width: 10rem;
-  background-size: cover;
-  background-position: center;
-  border-radius: 0.75rem;
+  /* extend de imagen */
 }
 .main-index .home-padding-hero .home-hero .home-thumbnail-content .home-thumbnail2 {
   background-image: url("../assets/img/index/index-hero-thumbnail2.jpg");
-  height: 10rem;
-  width: 10rem;
-  background-size: cover;
-  background-position: center;
-  border-radius: 0.75rem;
+  /* extend de imagen */
 }
 .main-index .home-padding-hero .home-hero .home-thumbnail-content .home-background-price {
+  /* mixin de flex */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -246,6 +262,7 @@ nav div div ul li .nav-link:hover {
   background-color: rgba(3, 238, 255, 0.1490196078);
   backdrop-filter: blur(8px);
   padding: 1.5rem 1rem 1rem 1rem;
+  /* List de imagen radius */
   border-radius: 0.75rem;
 }
 .main-index .home-banner-content {
@@ -279,8 +296,9 @@ nav div div ul li .nav-link:hover {
   height: 65vh;
   max-height: 60rem;
   min-height: 40rem;
-  object-fit: cover;
   /* ajustar imagen dentro del div */
+  object-fit: cover;
+  /* List de imagen radius */
   border-radius: 1.5rem;
 }
 .main-index .home-info-content .home-photo-content .home-photo-info {
@@ -310,8 +328,9 @@ nav div div ul li .nav-link:hover {
   height: 65vh;
   max-height: 60rem;
   min-height: 40rem;
-  object-fit: cover;
   /* ajustar imagen dentro del div */
+  object-fit: cover;
+  /* List de imagen radius */
   border-radius: 1.5rem;
 }
 .main-index .home-info-content .home-nft-content .home-nft-wrapper .home-nft-button {
@@ -322,6 +341,7 @@ nav div div ul li .nav-link:hover {
   height: 12rem;
   background-color: rgba(3, 238, 255, 0.1490196078);
   backdrop-filter: blur(8px);
+  /* List de imagen radius */
   border-radius: 0rem 0rem 1.5rem 0rem;
 }
 .main-index .home-info-content .home-nft-content .home-nft-wrapper .home-nft-button .nft-arrow-image {
@@ -334,6 +354,7 @@ nav div div ul li .nav-link:hover {
   top: 0%;
   bottom: 0%;
   left: 8rem;
+  /* mixin de flex */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -345,23 +366,25 @@ nav div div ul li .nav-link:hover {
 /* AUTOR-main */
 .main-autor .autor-bio-content {
   display: grid;
-  grid-template-columns: auto 1fr 1fr;
-}
-.main-autor .autor-bio-content .teal-box-decor {
-  height: 50px;
-  width: 50px;
+  grid-template-columns: 1fr 1fr;
 }
 .main-autor .autor-bio-content .autor-bio-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 1rem;
-  padding: 0rem 4rem 0rem 0rem;
+  align-items: start;
+  gap: 2rem;
+}
+.main-autor .autor-bio-content .autor-bio-info .autor-title {
+  position: relative;
+  font-size: 10rem;
+  line-height: 0.5;
+  left: -1rem;
 }
 .main-autor .autor-bio-content .autor-photo {
-  min-height: 450px;
+  aspect-ratio: 1/1;
   width: 100%;
-  min-width: 300px;
+  min-height: 600px;
   object-fit: cover;
 }
 .main-autor .autor-insta-content {
@@ -369,9 +392,9 @@ nav div div ul li .nav-link:hover {
   grid-template-columns: 1fr 2fr auto;
 }
 .main-autor .autor-insta-content div .autor-instagram {
-  min-height: 450px;
   width: 100%;
-  min-width: 300px;
+  height: 100%;
+  min-height: 400px;
   object-fit: cover;
 }
 .main-autor .autor-insta-content .autor-insta-info {
@@ -379,12 +402,16 @@ nav div div ul li .nav-link:hover {
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
-  padding: 0rem 4rem;
+  padding: 2rem 3rem;
 }
 .main-autor .autor-insta-content .autor-nft-button .autor-arrow-image {
   /*estilos para flechas*/
-  height: 100%;
-  padding: 2rem;
+  padding: 1rem;
+}
+.main-autor .autor-insta-content .autor-nft-button {
+  background-color: #5ee4fd;
+  min-width: 100px;
+  align-self: flex-end;
 }
 
 /* GALERÍA-main */
@@ -394,10 +421,11 @@ nav div div ul li .nav-link:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 2rem;
   z-index: 1;
 }
-.main-galeria div .galeria-header-background {
+.main-galeria .galeria-header-background {
   position: absolute;
   top: 0;
   right: 0;
@@ -414,7 +442,6 @@ nav div div ul li .nav-link:hover {
 .main-galeria .galeria-content {
   position: relative;
   display: grid;
-  grid-template-rows: auto auto auto;
   gap: 4rem;
   padding-bottom: 8rem;
 }
@@ -426,27 +453,16 @@ nav div div ul li .nav-link:hover {
 }
 .main-galeria .galeria-content .galeria-images .galery-image-01 {
   background-image: url("../assets/img/galeria/galery-01.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 450px;
-  width: 300px;
+  /* extend de imagen */
 }
 .main-galeria .galeria-content .galeria-images .galery-image-02 {
   background-image: url("../assets/img/galeria/galery-02.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  /* extend de imagen */
   height: 600px;
-  width: 300px;
 }
 .main-galeria .galeria-content .galeria-images .galery-image-03 {
   background-image: url("../assets/img/galeria/galery-03.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 400px;
-  width: 300px;
+  /* extend de imagen */
 }
 .main-galeria .galeria-content .galeria-info-content {
   display: flex;
@@ -462,6 +478,10 @@ nav div div ul li .nav-link:hover {
   display: flex;
   justify-content: center;
 }
+.main-galeria .galeria-content .galeria-video-content .galeria-video {
+  aspect-ratio: 16/9;
+  width: 80%;
+}
 
 /* NFT-main */
 .main-nft .nft-padding-hero {
@@ -476,18 +496,11 @@ nav div div ul li .nav-link:hover {
   max-width: 90rem;
 }
 .main-nft .nft-padding-hero .nft-title-header h1 .nft-title-image-01 {
-  position: relative;
-  top: -0.6rem;
-  object-fit: cover;
-  height: 90px;
-  width: 250px;
+  /* extend */
   border-radius: 10rem;
 }
 .main-nft .nft-padding-hero .nft-title-header h1 .nft-title-image-02 {
-  position: relative;
-  top: -0.6rem;
-  object-fit: cover;
-  height: 90px;
+  /* extend */
   width: 150px;
   border-radius: 1rem;
 }
@@ -514,7 +527,42 @@ nav div div ul li .nav-link:hover {
 }
 
 /* CONTACTOS-main */
-.main-contacto form label {
+.main-contacto .contacto-title-content {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6rem;
+}
+.main-contacto .contacto-title-content .contacto-title {
+  font-size: 10rem;
+  line-height: 0.5;
+}
+.main-contacto .contacto-content {
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+}
+.main-contacto .contacto-content .contacto-form-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 5rem 3rem 5rem 3rem;
+}
+.main-contacto .contacto-content .contacto-form-content .contact-form-title {
+  font-size: 2.5rem;
+  line-height: 1;
+  color: #9f9f9f;
+}
+.main-contacto .contacto-content .contacto-form-content .contact-form-component {
+  display: grid;
+  grid-template-columns: 0.25fr 1fr;
+  column-gap: 1rem;
+  row-gap: 2rem;
+  color: #111111;
+}
+.main-contacto .contacto-content .contacto-form-content .contact-form-component .form-button {
+  grid-column: 2/3;
+}
+.main-contacto .contacto-content .contacto-form-content .contact-form-component .form-button:hover {
+  background-color: #5ee4fd;
   color: #111111;
 }
 
@@ -683,6 +731,47 @@ footer div .footer-links ul a .logo-insta-footer {
     left: 4rem;
   }
   /* ------ */
+  /* main-AUTOR-tablet*/
+  .main-autor .autor-bio-content .autor-bio-info .autor-title {
+    font-size: 15vw;
+  }
+  .main-autor .autor-bio-content .autor-photo {
+    min-height: 500px;
+  }
+  .main-autor .autor-insta-content .autor-insta-info {
+    padding: 2rem 2rem;
+  }
+  /* ------ */
+  /* main-CONTACTO-tablet*/
+  .main-contacto .contacto-title-content {
+    margin-bottom: 4rem;
+  }
+  .main-contacto .contacto-title-content .contacto-title {
+    font-size: 15vw;
+  }
+  .main-contacto .contacto-content {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 500px;
+  }
+  /* ------ */
+  /* main-GALERIA-tablet*/
+  .main-galeria .galeria-content .galeria-images {
+    gap: 1.5rem;
+  }
+  .main-galeria .galeria-content .galeria-images .galery-image-01 {
+    height: 400px;
+  }
+  .main-galeria .galeria-content .galeria-images .galery-image-02 {
+    height: 550px;
+  }
+  .main-galeria .galeria-content .galeria-images .galery-image-03 {
+    height: 400px;
+  }
+  .main-galeria .galeria-content .galeria-video-content .galeria-video {
+    aspect-ratio: 16/9;
+    width: 100%;
+  }
+  /* ------ */
   /* main-NFT-tablet*/
   .main-nft .nft-padding-hero {
     /*padding custom nft*/
@@ -763,6 +852,7 @@ footer div .footer-links ul a .logo-insta-footer {
   .tittle-big {
     /*títulos principales*/
     font-size: 18vw;
+    left: 0rem;
   }
   /* HEADER-estilos-general-mobile*/
   #top .nav-pt-mobile {
@@ -868,6 +958,90 @@ footer div .footer-links ul a .logo-insta-footer {
   }
   .main-index .home-info-content .home-nft-content .home-nft-info .align-left {
     left: -0.5rem;
+  }
+  /* ------ */
+  /* main-AUTOR-mobile*/
+  .main-autor .autor-bio-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 4rem;
+  }
+  .main-autor .autor-bio-content .autor-bio-info .autor-title {
+    font-size: 18vw;
+    left: -0.5rem;
+  }
+  .main-autor .autor-bio-content .autor-photo {
+    min-height: 500px;
+  }
+  .main-autor .autor-insta-content {
+    grid-template-columns: 1fr;
+  }
+  .main-autor .autor-insta-content .autor-insta-info {
+    padding: 4rem 2rem;
+  }
+  .main-autor .autor-insta-content .autor-nft-button {
+    position: relative;
+    top: -2rem;
+    margin: auto;
+    width: 100px;
+  }
+  /* ------ */
+  /* main-CONTACTO-mobile*/
+  .main-contacto .contacto-title-content {
+    margin-bottom: 3rem;
+  }
+  .main-contacto .contacto-content {
+    grid-template-rows: 1fr 500px;
+  }
+  .main-contacto .contacto-content .contacto-form-content {
+    gap: 1rem;
+    padding: 3em 2rem 3rem 2rem;
+  }
+  .main-contacto .contacto-content .contacto-form-content .contact-form-component {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 0rem;
+    row-gap: 0rem;
+  }
+  .main-contacto .contacto-content .contacto-form-content .contact-form-component label {
+    margin-top: 1rem;
+  }
+  .main-contacto .contacto-content .contacto-form-content .contact-form-component .form-button {
+    margin-top: 2rem;
+    grid-column: 1/2;
+  }
+  /* ------ */
+  /* main-GALERIA-mobile*/
+  .main-galeria .galeria-content .galeria-images {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .main-galeria .galeria-content .galeria-images .galery-image-01 {
+    height: 600px;
+  }
+  .main-galeria .galeria-content .galeria-images .galery-image-02 {
+    height: 600px;
+  }
+  .main-galeria .galeria-content .galeria-images .galery-image-03 {
+    height: 600px;
+  }
+  .main-galeria .galeria-content .galeria-info-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2.5rem;
+  }
+  .main-galeria .galeria-content .galeria-info-content .galeria-divisor-info {
+    width: 120px;
+    height: 2px;
+  }
+  .main-galeria .galeria-content .galeria-video-content .galeria-video {
+    aspect-ratio: 16/9;
+    width: 100%;
+    height: 600px;
   }
   /* ------ */
   /* main-NFT-monile*/
