@@ -877,6 +877,9 @@ footer div .footer-links ul a .logo-insta-footer {
   h3 {
     font-size: 2rem;
   }
+  h2 {
+    font-size: 8vw;
+  }
   h5 {
     font-size: 1.25rem;
   }
@@ -1011,7 +1014,7 @@ footer div .footer-links ul a .logo-insta-footer {
     grid-template-columns: 1fr;
   }
   .main-autor .autor-bio-component .autor-insta-content .autor-insta-info {
-    padding: 4rem 0rem;
+    padding: 4rem 2rem;
   }
   .main-autor .autor-bio-component .autor-insta-content .autor-nft-button {
     position: relative;
@@ -1046,6 +1049,13 @@ footer div .footer-links ul a .logo-insta-footer {
   }
   /* ------ */
   /* main-GALERIA-mobile*/
+  .main-galeria .galeria-header-title {
+    height: 300px;
+  }
+  .main-galeria .galeria-header-background {
+    height: 52vh;
+    min-height: 500px;
+  }
   .main-galeria .galeria-content .galeria-images {
     flex-direction: column;
     gap: 2rem;

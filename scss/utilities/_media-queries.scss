@@ -348,6 +348,10 @@
         font-size: 2rem;
     }
 
+    h2 {
+        font-size: 8vw;
+    }
+
     h5 {
         font-size: 1.25rem;
     }
@@ -524,7 +528,7 @@
             grid-template-columns: 1fr;
 
             .autor-insta-info {
-                padding: 4rem 0rem;
+                padding: 4rem 2rem;
             }
 
             .autor-nft-button {
@@ -575,6 +579,13 @@
     /* ------ */
     /* main-GALERIA-mobile*/
     .main-galeria {
+        .galeria-header-title {
+            height: 300px;
+        }
+        .galeria-header-background {
+            height: 52vh;
+            min-height: 500px;
+        }
         .galeria-content {
             .galeria-images {
                 flex-direction: column;
