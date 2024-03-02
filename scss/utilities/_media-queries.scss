@@ -172,6 +172,8 @@
     /* ------ */
     /* main-AUTOR-tablet*/
     .main-autor {
+        .autor-bio-component {
+            gap: 4rem;
         .autor-bio-content {
             .autor-bio-info {
                 .autor-title {
@@ -189,6 +191,7 @@
                 padding: 2rem 2rem;
             }
         }
+    }
     }
 
 
@@ -498,11 +501,12 @@
     /* ------ */
     /* main-AUTOR-mobile*/
     .main-autor {
+        .autor-bio-component {
+            gap: 4rem;
         .autor-bio-content {
             display: grid;
             grid-template-columns: 1fr;
-            gap: 1rem;
-            margin-bottom: 4rem;
+            gap: 2rem;
 
             .autor-bio-info {
                 .autor-title {
@@ -520,7 +524,7 @@
             grid-template-columns: 1fr;
 
             .autor-insta-info {
-                padding: 4rem 2rem;
+                padding: 4rem 0rem;
             }
 
             .autor-nft-button {
@@ -530,6 +534,7 @@
                 width: 100px;
             }
         }
+    }
     }
 
 

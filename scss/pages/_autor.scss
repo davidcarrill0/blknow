@@ -1,63 +1,72 @@
 /* AUTOR-main */
 .main-autor {
-    .autor-bio-content {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+    .autor-bio-component {
+        display: flex;
+        flex-direction: column;
+        gap: 8rem;
+        
+        .autor-bio-content {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 1rem;
 
-        .autor-bio-info {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: start;
-            gap: 2rem;
-            .autor-title {
-                position: relative;
-                font-size: 10rem;
-                line-height: 0.5;
-                left: -1rem;
+            .autor-bio-info {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+                gap: 2rem;
+
+                .autor-title {
+                    position: relative;
+                    font-size: 10rem;
+                    line-height: 0.5;
+                    left: -1rem;
+                }
             }
-        }
 
-        .autor-photo {
-            aspect-ratio: 1 / 1;
-            width: 100%;
-            min-height: 600px;
-            object-fit: cover;
-        }
-    }
-
-
-    .autor-insta-content {
-        display: grid;
-        grid-template-columns: 1fr 2fr auto;
-
-        div {
-            .autor-instagram {
+            .autor-photo {
+                aspect-ratio: 1 / 1;
                 width: 100%;
-                height: 100%;
-                min-height: 400px;
+                min-height: 800px;
                 object-fit: cover;
             }
         }
 
-        .autor-insta-info {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            gap: 1rem;
-            padding: 2rem 3rem;
-        }
 
-        .autor-nft-button {
-            .autor-arrow-image {
-                /*estilos para flechas*/
-                padding: 1rem;
+        .autor-insta-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr auto;
+
+            div {
+                .autor-instagram {
+                    width: 100%;
+                    height: 100%;
+                    min-height: 400px;
+                    object-fit: cover;
+                }
             }
-        }
-        .autor-nft-button {
-            background-color: $color-brand;
-            min-width: 100px;
-            align-self: flex-end;
+
+            .autor-insta-info {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 1rem;
+                padding: 2rem 3rem;
+            }
+
+            .autor-nft-button {
+                .autor-arrow-image {
+                    /*estilos para flechas*/
+                    padding: 1rem;
+                }
+            }
+
+            .autor-nft-button {
+                background-color: $color-brand;
+                min-width: 100px;
+                align-self: flex-end;
+            }
         }
     }
 }

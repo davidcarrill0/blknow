@@ -42,6 +42,7 @@
                 background-image: url("../assets/img/galeria/galery-01.jpg");
                 /* extend de imagen */
                 @extend %galery-image;
+                &:hover {transform: translateY(-0.5rem);}
             }
 
             .galery-image-02 {
@@ -49,12 +50,14 @@
                 /* extend de imagen */
                 @extend %galery-image;
                 height: 600px;
+                &:hover {transform: translateY(-0.5rem);}
             }
 
             .galery-image-03 {
                 background-image: url("../assets/img/galeria/galery-03.jpg");
                 /* extend de imagen */
                 @extend %galery-image;
+                &:hover {transform: translateY(-0.5rem);}
             }
         }
 
